@@ -9,14 +9,14 @@ object q3 extends App{
     input.toLowerCase();
   }
 
-  def formatNames(name : String,func:String =>String):String ={
+  def formatNames(name : String)(func:String =>String):String ={
     func(name);
   }
 
-  println(formatNames("Benny",toUpper(_)))
-  println(formatNames("Niroshan".substring(0,2),toUpper(_))+formatNames("Niroshan".substring(2,8),toLower(_)))
-  println(formatNames("Saman",toLower(_)))
-  println(formatNames("kumara".substring(0,5),toLower(_))+formatNames("kumara".substring(5),toUpper(_)))
+  println(formatNames("Benny")(toUpper(_)))
+  println(formatNames("Niroshan".substring(0,2))(toUpper(_))+formatNames("Niroshan".substring(2))(toLower(_)))
+  println(formatNames("Saman")(toLower(_)))
+  println(formatNames("kumara".substring(0,5))(toLower(_))+formatNames("kumara".substring(5))(toUpper(_)))
   
 
 }
