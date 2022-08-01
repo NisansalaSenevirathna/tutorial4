@@ -7,7 +7,12 @@ object q1 extends App{
          case x if x<=2000000=>x*.035;
          case x if x>2000000=>x*.065;
   }
+     
+  
+   print("The deposited amount : ")
+   var deposit =scala.io.StdIn.readInt()
+   printf("The actual amount of interest that the money earns in a year %.2f",interest(deposit))
 
-  printf("amount of interest=%.2f",interest(10000));
+
 
 }
