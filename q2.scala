@@ -10,6 +10,9 @@ object q2 extends App{
 
   }
 
-      println(PatternMatching(0)
+    print("Enter  a number : ")
+    var name = scala.io.StdIn.readInt()
+    printf("%s",PatternMatching(name))
+
            
 }
