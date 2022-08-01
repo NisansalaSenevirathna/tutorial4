@@ -11,6 +11,5 @@ object q2 extends App{
   }
 
       println(PatternMatching(0)
-      println(patternMatching(2)
-      println(patternMatching(1)        
+           
 }
